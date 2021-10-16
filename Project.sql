@@ -1,4 +1,4 @@
-CREATE table recipeList(
+CREATE TABLE recipeList(
 	recipe_id INT NOT NULL AUTO_INCREMENT,
 	recipe_name varchar(255),
     tags varchar(255),
@@ -7,14 +7,9 @@ CREATE table recipeList(
     primary key(recipe_id)
 );
 
-CREATE table instruction(
-	instruction_id INT NOT NULL AUTO_INCREMENT,
-    texts varchar(225),
-    PRIMARY KEY (instruction_id)
-);
-
-CREATE TABLE recipe_instruction(
+CREATE TABLE instruction(
 	recipe_id INT NOT NULL,
-    instruction_id INT NOT NULL,
-    PRIMARY KEY (recipe_id, instruction_id)
+    instruction_id INT NOT NULL AUTO_INCREMENT,
+    texts varchar(255),
+    PRIMARY KEY (instruction_id)
 );
