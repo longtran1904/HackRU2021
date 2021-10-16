@@ -13,6 +13,8 @@ var recipe_name;
 var recipe_description;
 var recipe_url;
 var recipe_instructions;
+console.log("hello world");
+
 
 document.getElementById('SampleButton').addEventListener("click", get_recipe);
 //finds the placeId of starting location
