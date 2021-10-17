@@ -44,9 +44,11 @@ function get_recipe() {
         {
             recipe_name = results[i].name;
             recipe_instructions = results[i].instructions;
+            recipe_url = results[i].thumbnail_url;
             if (typeof recipe_instructions === 'undefined') recipe_instructions = results[i].recipes;
             console.log(recipe_name);
             console.log(recipe_instructions);
+            console.log(recipe_url);
         }
     })
     .catch(err => {
