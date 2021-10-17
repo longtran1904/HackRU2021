@@ -20,56 +20,99 @@
 
       
     <nav class="navbar navbar-light" style="background-image: url(background.png)">
-      <h1 style = "font-family:Lucida Handwriting,cursive">Find your next recipe!</h1>
+      <h1>Find your next recipe!</h1>
     </nav>
-    <h1 style = "font-family: cursive;">Recipe Generator</h1>
+    <h1>Recipe Generator</h1>
     <div class="container">
         <a href="homepage.html" onclick="submit(event);" class="btn btn-info" id = "SampleButton" role="button">Sample</a>
     </div>
 
-    <div>
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
+    <br>
 
-    <div class="card">
+    <div class="card" style="width: 60rem">
       <div class="card-body">
-        <div>
-
-          <body>
-            <div class="container">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="Type1" aria-selected="true">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="Type2" aria-selected="false">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="Type3" aria-selected="false">Contact</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">1</div>
-                    <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab">2</div>
-                    <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">3</div>
+        
+        <div class="container">
+          <ul class="nav nav-tabs mb-3 justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="cruisine-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="Type1" aria-selected="true">Cruisine</a>
+          </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="diet-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="Type2" aria-selected="false">Diet</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="method-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="Type3" aria-selected="false">Cooking Method</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="holiday-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="Type4" aria-selected="false">Holiday</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="meal-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="Type5" aria-selected="false">Meal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="simple-tab" data-toggle="tab" href="#tab6" role="tab" aria-controls="Type6" aria-selected="false">Simple</a>
+        </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="cruisine-tab">
+                <div>
+                  <a class="btn btn-info" href="#" role="button">Link</a>
+                  <button class="btn btn-info" type="submit">Button</button>
+                  <input class="btn btn-info" type="button" value="Input">
+                  <input class="btn btn-info" type="submit" value="Submit">
+                  <input class="btn btn-info" type="reset" value="Reset">
                 </div>
-            </div>
+              </div>
+              <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="diet-tab">
+                  <div>
+                    <a class="btn btn-info" href="#" role="button">Link</a>
+                    <button class="btn btn-info" type="submit">Button</button>
+                    <input class="btn btn-info" type="button" value="Input">
+                    <input class="btn btn-info" type="submit" value="Submit">
+                    <input class="btn btn-info" type="reset" value="Reset">
+                  </div> 
+              </div>
+              <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="method-tab">
+                <div>
+                  <a class="btn btn-info" href="#" role="button">Link</a>
+                  <button class="btn btn-info" type="submit">Button</button>
+                  <input class="btn btn-info" type="button" value="Input">
+                  <input class="btn btn-info" type="submit" value="Submit">
+                  <input class="btn btn-info" type="reset" value="Reset">
+                </div> 
+              </div>
+              <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="holiday-tab">
+                <div>
+                  <a class="btn btn-info" href="#" role="button">Link</a>
+                  <button class="btn btn-info" type="submit">Button</button>
+                  <input class="btn btn-info" type="button" value="Input">
+                  <input class="btn btn-info" type="submit" value="Submit">
+                  <input class="btn btn-info" type="reset" value="Reset">
+                </div> 
+              </div>
+              <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="meal-tab">
+                <div>
+                  <a class="btn btn-info" href="#" role="button">Link</a>
+                  <button class="btn btn-info" type="submit">Button</button>
+                  <input class="btn btn-info" type="button" value="Input">
+                  <input class="btn btn-info" type="submit" value="Submit">
+                  <input class="btn btn-info" type="reset" value="Reset">
+                </div> 
+              </div>
+              <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="simple-tab">
+                <div>
+                  <a class="btn btn-info" href="#" role="button">Link</a>
+                  <button class="btn btn-info" type="submit">Button</button>
+                  <input class="btn btn-info" type="button" value="Input">
+                  <input class="btn btn-info" type="submit" value="Submit">
+                  <input class="btn btn-info" type="reset" value="Reset">
+                </div> 
+              </div>
+          </div>
+      </div>
 
-
-
+      </div>
+    </div>
 
     <div class="card" style="width: 18rem;"></div>
       <div class="row">
