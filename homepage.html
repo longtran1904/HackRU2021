@@ -11,28 +11,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Recipe Generator</title>
-    <style>
-      h1 {text-align: center;}
-    </style>
+
   </head>
 
   <body>
 
       
-    <nav class="navbar navbar-light" style="background-image: url(background.png)">
-      <h1>Find your next recipe!</h1>
+    <nav class="navbar navbar-light py-4" style="background-image: url(wallpaper.jpg)">
+        <div class="col-md-12 text-center">
+          <h1 class="display-4">Find a recipe!</h1>
+          <a href="homepage.html" onclick="submit(event);" class="btn btn-info" id = "SampleButton" role="button">Generate Recipes</a>
+        </div>
     </nav>
-    <h1>Recipe Generator</h1>
     <div class="container">
-      <div class="col-xs-1" align="center">
-        <a href="homepage.html" onclick="submit(event);" class="btn btn-info" id = "SampleButton" role="button">Find Recipes</a>
-      </div>
+
       
     </div>
     <br>
 
     <div class="card-group">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 15rem;">
       <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title"> 
@@ -45,7 +43,7 @@
       </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 15rem;">
         <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"> 
@@ -59,7 +57,7 @@
         </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 15rem;">
           <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title"> <p id="recipe_name_3"></p>   </h5>
@@ -70,6 +68,8 @@
           </div>
           </div>
     </div>
+    <br>
+    <br>
   
 
     
