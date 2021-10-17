@@ -9,12 +9,58 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Recipe Generator</title>
+    <style>
+      h1 {text-align: center;}
+    </style>
   </head>
+
+
+
   <body>
+      
+    <nav class="navbar navbar-light" style="background-color: #98c47e;">
+      <h1>Find your next recipe!</h1>
+    </nav>
     <h1>Recipe Generator</h1>
     <div class="container">
         <a href="homepage.html" onclick="submit(event);" class="btn btn-info" id = "SampleButton" role="button">Sample</a>
     </div>
+
+    
+
+    <div class="card">
+      <div class="card-body">
+        <div>
+
+          <body>
+            <div class="container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="Type1" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="Type2" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="Type3" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">1</div>
+                    <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab">2</div>
+                    <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">3</div>
+                </div>
+            </div>
+
+   </ul>
+</div>
+          
+          
+        </div>
+      </div>
+    </div>
+   
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
