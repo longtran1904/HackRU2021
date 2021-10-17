@@ -1,3 +1,12 @@
+var mysql = require('Project');
+
+var con = mysql.createConnection({
+    host: "127.0.0.1:3306",
+    user: "root",
+    password: "Grand13111092720",
+    database: "Project"
+});
+
 var recipe_name;
 var recipe_description;
 var recipe_url;
