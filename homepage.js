@@ -55,7 +55,7 @@ function get_recipe() {
         if (typeof recipe_instructions_2 === 'undefined') 
             recipe_instructions_2 = results[1].recipes;
         recipe_instructions_3 = results[2].instructions;
-        if (typeof recipe_instructions_3 === 'undefined') 
+        if (typeof recipe_instructions_3 === 'undefined')
             recipe_instructions_3 = results[2].recipes;
 
         let data_s = recipe_instructions_1;
@@ -63,26 +63,25 @@ function get_recipe() {
   
         data_s.forEach((item) => {
             let li = document.createElement("li");
-            li.innerText = item.description;
+            li.innerText = item.display_text;
             list.appendChild(li);
         });
 
-         data_s = recipe_instructions_1;
-         list = document.getElementById("recipe_instructions_2");
+        data_s = recipe_instructions_2;
+        list = document.getElementById("recipe_instructions_2");
   
         data_s.forEach((item) => {
             let li = document.createElement("li");
-            li.innerText = item.description;
+            li.innerText = item.display_text;
             list.appendChild(li);
         });
 
-        data_s = recipe_instructions_1;
+        data_s = recipe_instructions_3;
         list = document.getElementById("recipe_instructions_3");
   
         data_s.forEach((item) => {
             let li = document.createElement("li");
-            li.innerText = item.description;
-            console.log(item);
+            li.innerText = item.display_text;
             list.appendChild(li);
         });
         
