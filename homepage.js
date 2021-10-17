@@ -28,7 +28,7 @@ function get_recipe() {
     // currency = document.getElementById('currency').value;
     console.log("Button clicked");
 
-    fetch("https://tasty.p.rapidapi.com/recipes/list?from=" + random() * 8000 + "&size=3", {
+    fetch("https://tasty.p.rapidapi.com/recipes/list?from=" + random() + "&size=3", {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "tasty.p.rapidapi.com",
