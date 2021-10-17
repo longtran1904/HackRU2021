@@ -1,3 +1,7 @@
+CREATE DATABASE HackRU;
+
+USE HackRU;
+
 CREATE TABLE recipeList(
 	recipe_id INT NOT NULL AUTO_INCREMENT,
 	recipe_name varchar(255),
