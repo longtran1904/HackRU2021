@@ -1,7 +1,14 @@
-var recipe_name;
+var recipe_name_1;
+var recipe_name_1;
+var recipe_name_1;
+var recipe_instructions_1;
+
+var recipe_instructions_2;
+
+var recipe_instructions_3;
+
 var recipe_nutrition;
 var recipe_url;
-var recipe_instructions;
 
 console.log("hello world");
 
@@ -42,7 +49,12 @@ function get_recipe() {
         console.log(results);
         for (let i = 0; i < results.length; i++)
         {
-            recipe_name = results[i].name;
+            document.getElementById("recipe_name_1").innerHTML = results[i].name;
+            document.getElementById("recipe_name_2").innerHTML = results[i].name;
+            document.getElementById("recipe_name_3").innerHTML = results[i].name;
+            document.getElementById("recipe_instructions_1") = results[i].instructions;
+            document.getElementById("recipe_instructions_2") = results[i].instructions;
+            document.getElementById("recipe_instructions_3") = results[i].instructions;
             recipe_instructions = results[i].instructions;
             recipe_url = results[i].thumbnail_url;
             if (typeof recipe_instructions === 'undefined') recipe_instructions = results[i].recipes;
