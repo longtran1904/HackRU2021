@@ -2,7 +2,8 @@ CREATE TABLE recipeList(
 	recipe_id INT NOT NULL AUTO_INCREMENT,
 	recipe_name varchar(255),
     tags varchar(255),
-    image varchar(255),
+    recipe_image varchar(255),
+    nutrition varchar(255),
     descrip varchar(255),
     primary key(recipe_id)
 );
