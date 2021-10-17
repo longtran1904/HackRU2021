@@ -1,14 +1,5 @@
-var mysql = require('Project');
-
-var con = mysql.createConnection({
-    host: "127.0.0.1:3306",
-    user: "root",
-    password: "Grand13111092720",
-    database: "Project"
-});
-
 var recipe_name;
-var recipe_description;
+var recipe_nutrition;
 var recipe_url;
 var recipe_instructions;
 
@@ -19,6 +10,14 @@ document.getElementById('SampleButton').addEventListener("click", get_recipe);
 function submit(event) {
     event.preventDefault();
 }
+
+// random
+var seed = 1;
+function random() {
+    var x = Math.sin(seed++) * 8000;
+    return x - Math.floor(x);
+}
+
 //finds the placeId of starting location
 function get_recipe() {
     //reading the inputs from the homepage form
@@ -29,21 +28,26 @@ function get_recipe() {
     // currency = document.getElementById('currency').value;
     console.log("Button clicked");
 
-    fetch("https://tasty.p.rapidapi.com/recipes/detail?id=5000", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "tasty.p.rapidapi.com",
-		"x-rapidapi-key": "9457ace4efmsh75335d360ed9d31p1f05bdjsnfd3e606ceec1"
-	}})
+    fetch("https://tasty.p.rapidapi.com/recipes/list?from=" + random() * 8000 + "&size=3", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "tasty.p.rapidapi.com",
+            "x-rapidapi-key": "9457ace4efmsh75335d360ed9d31p1f05bdjsnfd3e606ceec1"
+        }
+    })
     .then(response =>
         response.json())
     .then(data => {
-        recipe_name = data.name;
-        recipe_description = data.description;
-        recipe_instructions = data.instructions;
-        console.log(recipe_name);
-        console.log(recipe_description);
-        console.log(recipe_instructions);
+        var results = data.results;
+        console.log(results);
+        for (let i = 0; i < results.length; i++)
+        {
+            recipe_name = results[i].name;
+            recipe_instructions = results[i].instructions;
+            if (typeof recipe_instructions === 'undefined') recipe_instructions = results[i].recipes;
+            console.log(recipe_name);
+            console.log(recipe_instructions);
+        }
     })
     .catch(err => {
         console.error(err);
